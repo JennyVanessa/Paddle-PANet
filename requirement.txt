@@ -1,0 +1,5 @@
+mmcv==0.2.12
+editdistance
+Polygon3
+pyclipper
+Cython
