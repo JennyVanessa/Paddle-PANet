@@ -168,7 +168,7 @@ def main(args):
         shuffle=True,
         drop_last=True,
         num_workers=0,
-        use_shared_memory=True
+        use_shared_memory=False
     )
     from models import build_model
     model = build_model(cfg.model)
