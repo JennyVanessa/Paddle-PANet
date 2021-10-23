@@ -17,53 +17,65 @@ class EmbLoss_v1(nn.Layer):
         training_mask = (training_mask > 0.5)
         kernel = (kernel > 0.5)
         instance = instance * training_mask
+        instance_kernel = instance * kernel
+        instance_kernel = paddle.reshape(instance_kernel, [-1])
+        instance = paddle.reshape(instance, [-1])
         
-        instance_kernel = (instance * kernel).view(-1)
-        instance = paddle.reshape(instance, -1)
-        emb = emb.view(self.feature_dim, -1)
+        emb = paddle.reshape(emb, [self.feature_dim, -1])
 
         unique_labels, unique_ids = paddle.unique(instance_kernel,
-                                                 sorted=True,
+                                                #  sorted=True,
                                                  return_inverse=True)
-        num_instance = unique_labels.size(0)
+        num_instance = unique_labels.shape[0]
         if num_instance <= 1:
             return 0
 
-        emb_mean = emb.new_zeros((self.feature_dim, num_instance),
-                                 dtype="float32")
+        emb_mean = paddle.zeros(shape=[self.feature_dim, num_instance], dtype='float32')
+
         for i, lb in enumerate(unique_labels):
             if lb == 0:
                 continue
-            ind_k = instance_kernel == lb
-            emb_mean[:, i] = paddle.mean(emb[:, ind_k], dim=1)
 
-        l_agg = emb.new_zeros(num_instance, dtype="float32")  # bug
+            ind_k = instance_kernel == lb
+            print(ind_k)
+            print(emb_mean[:, i])
+            print(emb.shape)
+            emb_mean[:, i] = paddle.mean(emb[:, ind_k], axis=1)
+
+        l_agg = paddle.zeros(shape=[num_instance], dtype='float32')
+
         for i, lb in enumerate(unique_labels):
             if lb == 0:
                 continue
             ind = instance == lb
             emb_ = emb[:, ind]
-            dist = (emb_ - emb_mean[:, i:i + 1]).norm(p=2, dim=0)
+            dist = (emb_ - emb_mean[:, i:i + 1]).norm(p=2, axis=0)
             dist = F.relu(dist - self.delta_v)**2
             l_agg[i] = paddle.mean(paddle.log(dist + 1.0))
         l_agg = paddle.mean(l_agg[1:])
 
         if num_instance > 2:
             emb_interleave = emb_mean.permute(1, 0).repeat(num_instance, 1)
-            emb_band = emb_mean.permute(1, 0).repeat(1, num_instance).view(
-                -1, self.feature_dim)
+            emb_band = emb_mean.permute(1, 0).repeat(1, num_instance)
+            emb_band = paddle.reshape(emb_band, [-1, self.feature_dim])
+
             # print(seg_band)
 
-            mask = (1 - paddle.eye(num_instance, dtype='int8')).view(
-                -1, 1).repeat(1, self.feature_dim)
-            mask = mask.view(num_instance, num_instance, -1)
+            mask = (1 - paddle.eye(num_instance, dtype='int8'))
+            mask = paddle.reshape(mask, [-1, 1]).repeat(1, self.feature_dim)
+
+            mask = paddle.reshape(mask, [num_instance, num_instance, -1])
+
             mask[0, :, :] = 0
             mask[:, 0, :] = 0
-            mask = mask.view(num_instance * num_instance, -1)
+
+            mask = paddle.reshape(mask, [num_instance * num_instance, -1])
+
             # print(mask)
 
             dist = emb_interleave - emb_band
-            dist = dist[mask > 0].view(-1, self.feature_dim).norm(p=2, dim=1)
+            dist = dist[mask > 0]
+            dist = paddle.reshape(dist, [-1, self.feature_dim]).norm(p=2, axis=1)
             dist = F.relu(2 * self.delta_d - dist)**2
             l_dis = paddle.mean(paddle.log(dist + 1.0))
         else:
@@ -83,7 +95,8 @@ class EmbLoss_v1(nn.Layer):
                 bboxes,
                 reduce=True):
         emb = paddle.to_tensor(emb)
-        loss_batch = paddle.zeros_like(emb, dtype="float32")
+
+        loss_batch = paddle.zeros(shape=[emb.shape[0]], dtype='float32')
 
         for i in range(loss_batch.shape[0]):
             loss_batch[i] = self.forward_single(emb[i], instance[i], kernel[i],
