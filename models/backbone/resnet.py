@@ -196,8 +196,9 @@ def resnet18(pretrained=False, **kwargs):
     """
     model = ResNet(BasicBlock, [2, 2, 2, 2], **kwargs)
     if pretrained:
-        model = resnet18(pretrained=True)
-        # model.load_state_dict(load_url(model_urls['resnet18']), strict=False)
+        # model = resnet18(pretrained=True)
+        # model = model.set_state_dict("pretrained/resnet18_paddle.pdparams")
+        model = paddle.vision.models.resnet18(pretrained='pretrained/resnet18_paddle.pdparams')
     return model
 
 def load_url(url, model_dir='./pretrained', map_location=None):

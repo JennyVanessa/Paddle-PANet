@@ -1,6 +1,5 @@
 import numpy as np
 import cv2
-import torch
 cimport numpy as np
 cimport cython
 cimport libcpp

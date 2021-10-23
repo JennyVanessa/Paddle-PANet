@@ -16,7 +16,7 @@ from ..loss import build_loss, iou, ohem_batch
 from ..post_processing import pa
 
 
-class PA_Head(nn.Module):
+class PA_Head(nn.Layer):
     def __init__(self, in_channels, hidden_dim, num_classes, loss_text,
                  loss_kernel, loss_emb):
         super(PA_Head, self).__init__()
@@ -26,7 +26,7 @@ class PA_Head(nn.Module):
                                stride=1,
                                padding=1)
         self.bn1 = nn.BatchNorm2D(hidden_dim)
-        self.relu1 = nn.ReLU(inplace=True)
+        self.relu1 = nn.ReLU()
 
         self.conv2 = nn.Conv2D(hidden_dim,
                                num_classes,
@@ -38,13 +38,12 @@ class PA_Head(nn.Module):
         self.kernel_loss = build_loss(loss_kernel)
         self.emb_loss = build_loss(loss_emb)
 
-        for m in self.modules():
+        for m in self.sublayers():
             if isinstance(m, nn.Conv2D):
-                n = m.kernel_size[0] * m.kernel_size[1] * m.out_channels
-                m.weight.data.normal_(0, math.sqrt(2. / n))
+                n = m.weight.shape[0] * m.weight.shape[1] * m.weight.shape[2]
+                v = np.random.normal(loc=0., scale=np.sqrt(2. / n), size=m.weight.shape).astype('float32')
+                m.weight.set_value(v)
             elif isinstance(m, nn.BatchNorm):
-                #m.weight.data.fill_(1)
-                #m.bias.data.zero_()
                 m.weight.set_value(np.ones(m.weight.shape).astype('float32'))
                 m.bias.set_value(np.zeros(m.bias.shape).astype('float32'))
 
