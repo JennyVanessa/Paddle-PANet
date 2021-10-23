@@ -5,10 +5,10 @@ import mmcv
 import numpy as np
 import Polygon as plg
 import pyclipper
-import torch
-import torchvision.transforms as transforms
+import paddle
+import paddle.vision.transforms as transforms
 from PIL import Image
-import paddle.io.Dataset
+from paddle.io import Dataset
 
 ctw_root_dir = './data/ctw1500/'
 ctw_train_data_dir = ctw_root_dir + 'train/text_image/'
@@ -338,11 +338,11 @@ class PAN_CTW(Dataset):
         img = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                    std=[0.229, 0.224, 0.225])(img)
 
-        gt_text = torch.from_numpy(gt_text).long()
-        gt_kernels = torch.from_numpy(gt_kernels).long()
-        training_mask = torch.from_numpy(training_mask).long()
-        gt_instance = torch.from_numpy(gt_instance).long()
-        gt_bboxes = torch.from_numpy(gt_bboxes).long()
+        gt_text = paddle.to_tensor(gt_text).long()
+        gt_kernels = paddle.to_tensor(gt_kernels).long()
+        training_mask = paddle.to_tensor(training_mask).long()
+        gt_instance = paddle.to_tensor(gt_instance).long()
+        gt_bboxes = paddle.to_tensor(gt_bboxes).long()
 
         data = dict(
             imgs=img,
