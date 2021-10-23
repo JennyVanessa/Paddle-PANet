@@ -2,6 +2,7 @@ import os
 import sys
 import paddle
 import paddle.nn as nn
+from paddle.vision.models import resnet18
 import math
 import numpy as np
 
@@ -10,7 +11,7 @@ try:
 except ImportError:
     from urllib.request import urlretrieve
 
-__all__ = ['resnet50']
+__all__ = ['resnet50','resnet18']
 
 
 def conv3x3(in_planes, out_planes, stride=1):
@@ -187,6 +188,17 @@ def resnet50(pretrained=False, **kwargs):
         model.set_state_dict(load_url('https://drive.google.com/file/d/1R4cb6Von9jOcHdqK7MJ1pbK23OxKC0zC/view?usp=sharing'))
     return model
 
+def resnet18(pretrained=False, **kwargs):
+    """Constructs a ResNet-18 model.
+
+    Args:
+        pretrained (bool): If True, returns a model pre-trained on Places
+    """
+    model = ResNet(BasicBlock, [2, 2, 2, 2], **kwargs)
+    if pretrained:
+        model = resnet18(pretrained=True)
+        # model.load_state_dict(load_url(model_urls['resnet18']), strict=False)
+    return model
 
 def load_url(url, model_dir='./pretrained', map_location=None):
     if not os.path.exists(model_dir):
