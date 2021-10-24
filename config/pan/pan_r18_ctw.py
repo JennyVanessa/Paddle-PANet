@@ -2,7 +2,7 @@ model = dict(
     type='PAN',
     backbone=dict(
         type='resnet18',
-        pretrained=True
+        pretrained=True,
     ),
     neck=dict(
         type='FPEM_v1',

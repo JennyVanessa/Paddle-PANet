@@ -34,7 +34,7 @@ def train(train_loader, model, optimizer, epoch, start_iter, cfg, args):
     # start time
     start = time.time()
 
-    for iter, data_ in enumerate(train_loader):
+    for iter, (img,gt_text,gt_kernels,training_mask,gt_instance,gt_bboxes) in enumerate(train_loader):
 
         # skip previous iterations
         if iter < start_iter:
@@ -46,13 +46,24 @@ def train(train_loader, model, optimizer, epoch, start_iter, cfg, args):
 
         adjust_learning_rate(optimizer, train_loader, epoch, iter, cfg)
 
+        img=paddle.to_tensor(img)
+        gt_text=paddle.to_tensor(gt_text)
+        gt_kernels=paddle.to_tensor(gt_kernels)
+        training_mask=paddle.to_tensor(training_mask)
+        gt_instance=paddle.to_tensor(gt_instance)
+        gt_bboxes=paddle.to_tensor(gt_bboxes)
+
+
         # prepare input
         data = dict(
-            imgs=data_[0],
-            gt_texts=data_[1],
-            gt_kernels=data_[2],
-            training_masks=data_[3],
+            imgs=img,
+            gt_texts=gt_text,
+            gt_kernels=gt_kernels,
+            training_masks=training_mask,
+            gt_instances = gt_instance,
+            gt_bboxes = gt_bboxes
         )
+        data.update(dict(cfg=cfg))
         # from PIL import Image
         # import numpy as np
         # if dist.get_rank() == 0:
@@ -64,7 +75,6 @@ def train(train_loader, model, optimizer, epoch, start_iter, cfg, args):
         #     training_mask.save("training_mask.png")
         # exit()
 
-        data.update(dict(cfg=cfg))
         outputs = model(**data)
 
         # detection loss
@@ -168,7 +178,7 @@ def main(args):
         shuffle=True,
         drop_last=True,
         num_workers=0,
-        use_shared_memory=False
+        use_shared_memory=True
     )
     from models import build_model
     model = build_model(cfg.model)

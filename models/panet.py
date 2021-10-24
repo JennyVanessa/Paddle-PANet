@@ -1,4 +1,5 @@
 import time
+import numpy
 
 import paddle
 import paddle.nn as nn
@@ -16,10 +17,10 @@ class PAN(nn.Layer):
         self.backbone = build_backbone(backbone)
 
         in_channels = neck.in_channels
-        self.reduce_layer1 = Conv_BN_ReLU(in_channels[0]*4, 128)
-        self.reduce_layer2 = Conv_BN_ReLU(in_channels[1]*4, 128)
-        self.reduce_layer3 = Conv_BN_ReLU(in_channels[2]*4, 128)
-        self.reduce_layer4 = Conv_BN_ReLU(in_channels[3]*4, 128)
+        self.reduce_layer1 = Conv_BN_ReLU(in_channels[0], 128)
+        self.reduce_layer2 = Conv_BN_ReLU(in_channels[1], 128)
+        self.reduce_layer3 = Conv_BN_ReLU(in_channels[2], 128)
+        self.reduce_layer4 = Conv_BN_ReLU(in_channels[3], 128)
 
         self.fpem1 = build_neck(neck)
         self.fpem2 = build_neck(neck)
@@ -48,7 +49,8 @@ class PAN(nn.Layer):
         # backbone
         # print(imgs.shape)
         f = self.backbone(imgs)
-        # print(f.shape)
+        # print(numpy.size(f))
+        # print(f)
 
         # if not self.training and cfg.report_speed:
         #     torch.cuda.synchronize()
@@ -57,6 +59,7 @@ class PAN(nn.Layer):
 
         # reduce channel
 
+        # print(f[0].shape)
         f1 = self.reduce_layer1(f[0])
 
         f2 = self.reduce_layer2(f[1])

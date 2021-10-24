@@ -36,7 +36,7 @@ class EmbLoss_v1(nn.Layer):
                 continue
 
             ind_k = instance_kernel == lb
-            emb_mean[:, i] = paddle.mean(paddle.to_tensor(emb.numpy()[:, ind_k]), axis=1)
+            emb_mean[:, i] = paddle.mean(paddle.to_tensor(emb.numpy()[:, ind_k.numpy()]), axis=1)
 
         l_agg = paddle.zeros(shape=[num_instance], dtype='float32')
 
@@ -44,7 +44,7 @@ class EmbLoss_v1(nn.Layer):
             if lb == 0:
                 continue
             ind = instance == lb
-            emb_ = paddle.to_tensor(emb.numpy()[:, ind])
+            emb_ = paddle.to_tensor(emb.numpy()[:, ind.numpy()])
             dist = (emb_ - emb_mean[:, i:i + 1]).norm(p=2, axis=0)
             dist = F.relu(dist - self.delta_v)**2
             l_agg[i] = paddle.mean(paddle.log(dist + 1.0))

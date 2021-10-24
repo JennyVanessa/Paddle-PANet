@@ -2,7 +2,7 @@ import os
 import sys
 import paddle
 import paddle.nn as nn
-from paddle.vision.models import resnet18
+# from paddle.vision.models import resnet18
 import math
 import numpy as np
 
@@ -27,7 +27,7 @@ class BasicBlock(nn.Layer):
         super(BasicBlock, self).__init__()
         self.conv1 = conv3x3(inplanes, planes, stride)
         self.bn1 = nn.BatchNorm2D(planes)
-        self.relu = nn.ReLU
+        self.relu = nn.ReLU()
         self.conv2 = conv3x3(planes, planes)
         self.bn2 = nn.BatchNorm2D(planes)
         self.downsample = downsample
