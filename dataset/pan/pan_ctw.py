@@ -200,10 +200,34 @@ def shrink(bboxes, rate, max_shr=20):
 
     return shrinked_bboxes
 
+class faker_data(Dataset):
+    def __init__(self,
+                 split='train',
+                 is_transform=False,
+                 img_size=None,
+                 short_size=640,
+                 kernel_scale=0.7,
+                 read_type='pil',
+                 report_speed=False):
+        self.faker_data = faker_data()
+    def __len__(self):
+        return len(100)
+
+    def faker_data(self):
+        imgs0 = np.random.randn(16, 3, 640, 640)
+        gt_texts0 = np.random.randn(16, 640, 640)
+        gt_kernels0 = np.random.randn(16, 1, 640, 640)
+        training_masks0 = np.random.randn(16, 640, 640)
+        gt_instances0 = np.random.randn(16, 640, 640)
+        gt_bboxes0 = np.random.randn(16, 201, 4)
+        return [imgs0, gt_texts0, gt_kernels0, training_masks0, gt_instances0, gt_bboxes0]
+
+    def __getitem__(self, index):
+        return self.faker_data
 
 class PAN_CTW(Dataset):
     def __init__(self,
-                 split='train',
+                 split='test',
                  is_transform=False,
                  img_size=None,
                  short_size=640,
@@ -350,18 +374,32 @@ class PAN_CTW(Dataset):
         img_path = self.img_paths[index]
 
         img = get_img(img_path, self.read_type)
-        img_meta = dict(org_img_size=np.array(img.shape[:2]))
 
-        img = scale_aligned_short(img, self.short_size)
-        img_meta.update(dict(img_size=np.array(img.shape[:2])))
+        scaled_img = scale_aligned_short(img, self.short_size)
 
-        img = Image.fromarray(img)
-        img = img.convert('RGB')
-        img = transforms.ToTensor()(img)
-        img = transforms.Normalize(mean=[0.485, 0.456, 0.406],
-                                   std=[0.229, 0.224, 0.225])(img)
+        scaled_img = Image.fromarray(scaled_img)
+        scaled_img = scaled_img.convert('RGB')
+        scaled_img = transforms.ToTensor()(scaled_img)
+        scaled_img = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])(scaled_img)
 
-        return img.astype(np.float32), img_meta.astype(np.float32)
+        return img.astype(np.float32), scaled_img.astype(np.float32)
+
+    # def prepare_test_data(self, index):
+    #     img_path = self.img_paths[index]
+
+    #     img = get_img(img_path, self.read_type)
+    #     img_meta = dict(org_img_size=np.array(img.shape[:2]))
+
+    #     img = scale_aligned_short(img, self.short_size)
+    #     img_meta.update(dict(img_size=np.array(img.shape[:2])))
+
+    #     img = Image.fromarray(img)
+    #     img = img.convert('RGB')
+    #     img = transforms.ToTensor()(img)
+    #     img = transforms.Normalize(mean=[0.485, 0.456, 0.406],
+    #                                std=[0.229, 0.224, 0.225])(img)
+
+    #     return img.astype(np.float32), img_meta
 
     def __getitem__(self, index):
         if self.split == 'train':
@@ -371,11 +409,18 @@ class PAN_CTW(Dataset):
 
 if __name__ == '__main__':
     paddle.device.set_device("cpu")
-    train_data = PAN_CTW()
-    train_loader = DataLoader(dataset=train_data, batch_size=1, shuffle=False, num_workers=0)
-    
+    test_data = PAN_CTW()
+    train_loader = DataLoader(dataset=test_data, batch_size=1, shuffle=False, num_workers=0)
     for iter, data_ in enumerate(train_loader):
         print(data_[0].shape)
+        cfg = "s"
+        # prepare input
+        data = dict(
+            imgs=data_[0],
+            img_metas=data_[1],
+            cfg=cfg
+        )
+
 
 # import random
 

@@ -53,7 +53,7 @@ def train(train_loader, model, optimizer, epoch, start_iter, cfg, args):
         gt_instance=paddle.to_tensor(gt_instance)
         gt_bboxes=paddle.to_tensor(gt_bboxes)
 
-
+        paddle.set_device("gpu")
         # prepare input
         data = dict(
             imgs=img,
@@ -178,7 +178,7 @@ def main(args):
         shuffle=True,
         drop_last=True,
         num_workers=0,
-        use_shared_memory=True
+        use_shared_memory=False
     )
     from models import build_model
     model = build_model(cfg.model)
@@ -235,7 +235,7 @@ if __name__ == '__main__':
     parser.add_argument('config', help='config file path')
     parser.add_argument('--checkpoint', nargs='?', type=str, default=None)
     parser.add_argument('--resume', nargs='?', type=str, default=None)
-    parser.add_argument('--nprocs', nargs='?', type=int, default=4)
+    parser.add_argument('--nprocs', nargs='?', type=int, default=7)
 
     args = parser.parse_args()
     dist.spawn(main, args=(args,), nprocs=args.nprocs)

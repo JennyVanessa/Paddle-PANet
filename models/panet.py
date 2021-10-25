@@ -48,6 +48,7 @@ class PAN(nn.Layer):
 
         # backbone
         # print(imgs.shape)
+
         f = self.backbone(imgs)
         # print(numpy.size(f))
         # print(f)
@@ -59,7 +60,6 @@ class PAN(nn.Layer):
 
         # reduce channel
 
-        # print(f[0].shape)
         f1 = self.reduce_layer1(f[0])
 
         f2 = self.reduce_layer2(f[1])

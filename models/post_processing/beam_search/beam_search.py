@@ -1,4 +1,4 @@
-import torch
+import paddle
 
 from .topk import TopK
 
@@ -63,8 +63,8 @@ class BeamSearch(object):
             if len(inputs) == 0:
                 break
 
-            inputs = torch.stack(inputs)
-            states = torch.stack(states, dim=2)
+            inputs = paddle.stack(inputs)
+            states = paddle.stack(states, axis=2)
             words, scores, states = self.decode_step(inputs,
                                                      states,
                                                      k=self.beam_size + 1)

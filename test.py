@@ -25,7 +25,6 @@ def test(test_loader, model, cfg):
         print('Testing %d/%d' % (idx, len(test_loader)))
         sys.stdout.flush()
 
-        # prepare input
         data = dict(
             imgs=data_[1],
             img_metas=dict(
@@ -34,6 +33,7 @@ def test(test_loader, model, cfg):
             ),
             cfg=cfg
         )
+
 
         # forward
         with paddle.no_grad():

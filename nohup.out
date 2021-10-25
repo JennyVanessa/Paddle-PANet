@@ -1,0 +1,1287 @@
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+W1025 14:00:30.399688 25950 nccl_context.cc:142] Socket connect worker 127.0.0.1:36101 failed, try again after 3 seconds.
+I1025 14:00:33.400028 25951 nccl_context.cc:189] init nccl context nranks: 7 local rank: 1 gpu id: 1 ring id: 0
+I1025 14:00:33.400197 25952 nccl_context.cc:189] init nccl context nranks: 7 local rank: 2 gpu id: 2 ring id: 0
+I1025 14:00:33.400264 25953 nccl_context.cc:189] init nccl context nranks: 7 local rank: 3 gpu id: 3 ring id: 0
+I1025 14:00:33.400341 25954 nccl_context.cc:189] init nccl context nranks: 7 local rank: 4 gpu id: 4 ring id: 0
+I1025 14:00:33.400398 25955 nccl_context.cc:189] init nccl context nranks: 7 local rank: 5 gpu id: 5 ring id: 0
+I1025 14:00:33.400409 25950 nccl_context.cc:189] init nccl context nranks: 7 local rank: 0 gpu id: 0 ring id: 0
+I1025 14:00:33.400472 25957 nccl_context.cc:189] init nccl context nranks: 7 local rank: 6 gpu id: 6 ring id: 0
+W1025 14:01:13.505079 25951 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 10.0, Runtime API Version: 10.0
+W1025 14:01:13.505793 25952 device_context.cc:362] Please NOTE: device: 2, GPU Compute Capability: 6.1, Driver API Version: 10.0, Runtime API Version: 10.0
+W1025 14:01:13.506789 25955 device_context.cc:362] Please NOTE: device: 5, GPU Compute Capability: 6.1, Driver API Version: 10.0, Runtime API Version: 10.0
+W1025 14:01:13.508118 25957 device_context.cc:362] Please NOTE: device: 6, GPU Compute Capability: 6.1, Driver API Version: 10.0, Runtime API Version: 10.0
+W1025 14:01:13.509163 25953 device_context.cc:362] Please NOTE: device: 3, GPU Compute Capability: 6.1, Driver API Version: 10.0, Runtime API Version: 10.0
+W1025 14:01:13.509686 25950 device_context.cc:362] Please NOTE: device: 0, GPU Compute Capability: 6.1, Driver API Version: 10.0, Runtime API Version: 10.0
+W1025 14:01:13.510067 25954 device_context.cc:362] Please NOTE: device: 4, GPU Compute Capability: 6.1, Driver API Version: 10.0, Runtime API Version: 10.0
+W1025 14:01:13.510754 25955 device_context.cc:372] device: 5, cuDNN Version: 7.6.
+W1025 14:01:13.512516 25951 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+W1025 14:01:13.512637 25952 device_context.cc:372] device: 2, cuDNN Version: 7.6.
+W1025 14:01:13.513203 25957 device_context.cc:372] device: 6, cuDNN Version: 7.6.
+W1025 14:01:13.515556 25954 device_context.cc:372] device: 4, cuDNN Version: 7.6.
+W1025 14:01:13.515581 25953 device_context.cc:372] device: 3, cuDNN Version: 7.6.
+W1025 14:01:13.516110 25950 device_context.cc:372] device: 0, cuDNN Version: 7.6.
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for conv1.weight. conv1.weight receives a shape [64, 3, 3, 3], but the expected shape is [64, 3, 7, 7].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._mean. bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._variance. bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.conv1.weight. layer1.0.conv1.weight receives a shape [64, 128, 3, 3], but the expected shape is [64, 64, 3, 3].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._mean. layer1.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._variance. layer1.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._mean. layer1.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._variance. layer1.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._mean. layer1.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._variance. layer1.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._mean. layer1.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._variance. layer1.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._mean. layer2.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._variance. layer2.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._mean. layer2.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._variance. layer2.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._mean. layer2.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._variance. layer2.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._mean. layer2.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._variance. layer2.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._mean. layer2.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._variance. layer2.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._mean. layer3.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._variance. layer3.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._mean. layer3.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._variance. layer3.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._mean. layer3.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for conv1.weight. conv1.weight receives a shape [64, 3, 3, 3], but the expected shape is [64, 3, 7, 7].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._mean. bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._variance. bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.conv1.weight. layer1.0.conv1.weight receives a shape [64, 128, 3, 3], but the expected shape is [64, 64, 3, 3].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._mean. layer1.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._variance. layer1.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._mean. layer1.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._variance. layer1.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._mean. layer1.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._variance. layer1.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._mean. layer1.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._variance. layer1.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._mean. layer2.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._variance. layer2.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._mean. layer2.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._variance. layer2.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._mean. layer2.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._variance. layer2.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._mean. layer2.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._variance. layer2.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._mean. layer2.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._variance. layer2.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._mean. layer3.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._variance. layer3.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._mean. layer3.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._variance. layer3.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._mean. layer3.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for conv1.weight. conv1.weight receives a shape [64, 3, 3, 3], but the expected shape is [64, 3, 7, 7].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._mean. bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._variance. bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.conv1.weight. layer1.0.conv1.weight receives a shape [64, 128, 3, 3], but the expected shape is [64, 64, 3, 3].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._mean. layer1.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._variance. layer1.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._mean. layer1.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._variance. layer1.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._mean. layer1.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._variance. layer1.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._mean. layer1.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._variance. layer1.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._mean. layer2.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._variance. layer2.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._mean. layer2.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._variance. layer2.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._mean. layer2.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._variance. layer2.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._mean. layer2.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._variance. layer2.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._mean. layer2.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._variance. layer2.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._mean. layer3.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._variance. layer3.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._mean. layer3.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._variance. layer3.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._mean. layer3.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for conv1.weight. conv1.weight receives a shape [64, 3, 3, 3], but the expected shape is [64, 3, 7, 7].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._mean. bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._variance. bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.conv1.weight. layer1.0.conv1.weight receives a shape [64, 128, 3, 3], but the expected shape is [64, 64, 3, 3].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._mean. layer1.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._variance. layer1.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._mean. layer1.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._variance. layer1.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._mean. layer1.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._variance. layer1.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._mean. layer1.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._variance. layer1.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._mean. layer2.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._variance. layer2.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._mean. layer2.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._variance. layer2.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._mean. layer2.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._variance. layer2.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._mean. layer2.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._variance. layer2.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._mean. layer2.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._variance. layer2.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._mean. layer3.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._variance. layer3.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._mean. layer3.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._variance. layer3.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._mean. layer3.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for conv1.weight. conv1.weight receives a shape [64, 3, 3, 3], but the expected shape is [64, 3, 7, 7].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._mean. bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._variance. bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.conv1.weight. layer1.0.conv1.weight receives a shape [64, 128, 3, 3], but the expected shape is [64, 64, 3, 3].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._mean. layer1.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._variance. layer1.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._mean. layer1.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._variance. layer1.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._mean. layer1.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._variance. layer1.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._mean. layer1.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._variance. layer1.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._mean. layer2.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._variance. layer2.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._mean. layer2.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._variance. layer2.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._mean. layer2.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._variance. layer2.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._mean. layer2.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._variance. layer2.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._mean. layer2.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._variance. layer2.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._mean. layer3.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._variance. layer3.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._mean. layer3.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._variance. layer3.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._mean. layer3.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for conv1.weight. conv1.weight receives a shape [64, 3, 3, 3], but the expected shape is [64, 3, 7, 7].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._mean. bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._variance. bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.conv1.weight. layer1.0.conv1.weight receives a shape [64, 128, 3, 3], but the expected shape is [64, 64, 3, 3].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._mean. layer1.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._variance. layer1.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._mean. layer1.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._variance. layer1.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._mean. layer1.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._variance. layer1.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._mean. layer1.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._variance. layer1.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._mean. layer2.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._variance. layer2.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._mean. layer2.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._variance. layer2.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._mean. layer2.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._variance. layer2.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._mean. layer2.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._variance. layer2.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._mean. layer2.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._variance. layer2.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._mean. layer3.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._variance. layer3.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._mean. layer3.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._variance. layer3.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._mean. layer3.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for conv1.weight. conv1.weight receives a shape [64, 3, 3, 3], but the expected shape is [64, 3, 7, 7].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._mean. bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._variance. bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.conv1.weight. layer1.0.conv1.weight receives a shape [64, 128, 3, 3], but the expected shape is [64, 64, 3, 3].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._mean. layer1.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._variance. layer1.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._mean. layer1.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._variance. layer1.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._mean. layer1.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._variance. layer1.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._mean. layer1.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._variance. layer1.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._mean. layer2.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._variance. layer2.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._mean. layer2.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._variance. layer2.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._mean. layer2.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._variance. layer2.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._mean. layer2.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._variance. layer2.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._mean. layer2.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._variance. layer2.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._mean. layer3.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._variance. layer3.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._mean. layer3.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._variance. layer3.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._mean. layer3.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+Checkpoint path: checkpoints/pan_r18_ctw_train.
+
+Epoch: [1 | 600]
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._variance. layer3.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._mean. layer3.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._variance. layer3.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._mean. layer3.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._variance. layer3.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._mean. layer4.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._variance. layer4.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._mean. layer4.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._variance. layer4.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._mean. layer4.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._variance. layer4.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._mean. layer4.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._variance. layer4.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._mean. layer4.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._variance. layer4.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.weight. fc.weight is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.bias. fc.bias is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._variance. layer3.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._mean. layer3.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._variance. layer3.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._mean. layer3.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._variance. layer3.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._mean. layer4.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._variance. layer4.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._mean. layer4.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._variance. layer4.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._mean. layer4.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._variance. layer4.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._mean. layer4.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._variance. layer4.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._mean. layer4.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._variance. layer4.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.weight. fc.weight is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.bias. fc.bias is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._variance. layer3.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._mean. layer3.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._variance. layer3.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._mean. layer3.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._variance. layer3.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._mean. layer4.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._variance. layer4.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._mean. layer4.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._variance. layer4.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._mean. layer4.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._variance. layer4.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._mean. layer4.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._variance. layer4.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._mean. layer4.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._variance. layer4.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.weight. fc.weight is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.bias. fc.bias is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._variance. layer3.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._mean. layer3.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._variance. layer3.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._mean. layer3.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._variance. layer3.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._mean. layer4.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._variance. layer4.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._mean. layer4.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._variance. layer4.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._mean. layer4.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._variance. layer4.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._mean. layer4.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._variance. layer4.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._mean. layer4.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._variance. layer4.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.weight. fc.weight is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.bias. fc.bias is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._variance. layer3.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._mean. layer3.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._variance. layer3.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._mean. layer3.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._variance. layer3.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._mean. layer4.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._variance. layer4.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._mean. layer4.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._variance. layer4.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._mean. layer4.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._variance. layer4.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._mean. layer4.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._variance. layer4.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._mean. layer4.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._variance. layer4.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.weight. fc.weight is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.bias. fc.bias is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._variance. layer3.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._mean. layer3.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._variance. layer3.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._mean. layer3.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._variance. layer3.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._mean. layer4.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._variance. layer4.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._mean. layer4.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._variance. layer4.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._mean. layer4.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._variance. layer4.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._mean. layer4.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._variance. layer4.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._mean. layer4.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._variance. layer4.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.weight. fc.weight is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.bias. fc.bias is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._variance. layer3.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._mean. layer3.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._variance. layer3.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._mean. layer3.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._variance. layer3.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._mean. layer4.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._variance. layer4.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._mean. layer4.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._variance. layer4.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._mean. layer4.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._variance. layer4.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._mean. layer4.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._variance. layer4.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._mean. layer4.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._variance. layer4.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.weight. fc.weight is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.bias. fc.bias is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+2021-10-25 14:07:49,886 - ERROR - DataLoader reader thread raised an exception!
+2021-10-25 14:07:49,891 - ERROR - DataLoader reader thread raised an exception!
+2021-10-25 14:07:49,900 - ERROR - DataLoader reader thread raised an exception!
+2021-10-25 14:07:49,941 - ERROR - DataLoader reader thread raised an exception!
+2021-10-25 14:07:50,006 - ERROR - DataLoader reader thread raised an exception!
+2021-10-25 14:07:50,020 - ERROR - DataLoader reader thread raised an exception!
+2021-10-25 14:07:50,033 - ERROR - DataLoader reader thread raised an exception!
+Traceback (most recent call last):
+  File "dist_train.py", line 241, in <module>
+    dist.spawn(main, args=(args,), nprocs=args.nprocs)
+  File "/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/distributed/spawn.py", line 449, in spawn
+    while not context.join():
+  File "/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/distributed/spawn.py", line 255, in join
+    self._throw_exception(error_index)
+  File "/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/distributed/spawn.py", line 273, in _throw_exception
+    raise Exception(msg)
+Exception: 
+
+----------------------------------------------
+Process 0 terminated with the following error:
+----------------------------------------------
+
+Traceback (most recent call last):
+  File "/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/distributed/spawn.py", line 204, in _func_wrapper
+    result = func(*args)
+  File "/data6/zhengtianlun/PANet_paddle-main/dist_train.py", line 221, in main
+    train(train_loader, model, optimizer, epoch, start_iter, cfg, args)
+  File "/data6/zhengtianlun/PANet_paddle-main/dist_train.py", line 37, in train
+    for iter, (img,gt_text,gt_kernels,training_mask,gt_instance,gt_bboxes) in enumerate(train_loader):
+  File "/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dataloader/dataloader_iter.py", line 779, in __next__
+    data = self._reader.read_next_var_list()
+SystemError: (Fatal) Blocking queue is killed because the data reader raises an exception.
+  [Hint: Expected killed_ != true, but received killed_:1 == true:1.] (at /paddle/paddle/fluid/operators/reader/blocking_queue.h:158)
+
+
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+W1025 14:09:39.492807 31679 nccl_context.cc:142] Socket connect worker 127.0.0.1:52521 failed, try again after 3 seconds.
+I1025 14:09:42.493135 31680 nccl_context.cc:189] init nccl context nranks: 7 local rank: 1 gpu id: 1 ring id: 0
+I1025 14:09:42.493283 31681 nccl_context.cc:189] init nccl context nranks: 7 local rank: 2 gpu id: 2 ring id: 0
+I1025 14:09:42.493364 31682 nccl_context.cc:189] init nccl context nranks: 7 local rank: 3 gpu id: 3 ring id: 0
+I1025 14:09:42.493436 31683 nccl_context.cc:189] init nccl context nranks: 7 local rank: 4 gpu id: 4 ring id: 0
+I1025 14:09:42.493526 31679 nccl_context.cc:189] init nccl context nranks: 7 local rank: 0 gpu id: 0 ring id: 0
+I1025 14:09:42.493516 31684 nccl_context.cc:189] init nccl context nranks: 7 local rank: 5 gpu id: 5 ring id: 0
+I1025 14:09:42.493578 31685 nccl_context.cc:189] init nccl context nranks: 7 local rank: 6 gpu id: 6 ring id: 0
+W1025 14:10:22.463685 31681 device_context.cc:362] Please NOTE: device: 2, GPU Compute Capability: 6.1, Driver API Version: 10.0, Runtime API Version: 10.0
+W1025 14:10:22.464378 31684 device_context.cc:362] Please NOTE: device: 5, GPU Compute Capability: 6.1, Driver API Version: 10.0, Runtime API Version: 10.0
+W1025 14:10:22.465896 31682 device_context.cc:362] Please NOTE: device: 3, GPU Compute Capability: 6.1, Driver API Version: 10.0, Runtime API Version: 10.0
+W1025 14:10:22.466156 31683 device_context.cc:362] Please NOTE: device: 4, GPU Compute Capability: 6.1, Driver API Version: 10.0, Runtime API Version: 10.0
+W1025 14:10:22.466604 31680 device_context.cc:362] Please NOTE: device: 1, GPU Compute Capability: 6.1, Driver API Version: 10.0, Runtime API Version: 10.0
+W1025 14:10:22.467222 31685 device_context.cc:362] Please NOTE: device: 6, GPU Compute Capability: 6.1, Driver API Version: 10.0, Runtime API Version: 10.0
+W1025 14:10:22.471077 31679 device_context.cc:362] Please NOTE: device: 0, GPU Compute Capability: 6.1, Driver API Version: 10.0, Runtime API Version: 10.0
+W1025 14:10:22.471577 31681 device_context.cc:372] device: 2, cuDNN Version: 7.6.
+W1025 14:10:22.471839 31684 device_context.cc:372] device: 5, cuDNN Version: 7.6.
+W1025 14:10:22.472043 31683 device_context.cc:372] device: 4, cuDNN Version: 7.6.
+W1025 14:10:22.473271 31680 device_context.cc:372] device: 1, cuDNN Version: 7.6.
+W1025 14:10:22.473641 31682 device_context.cc:372] device: 3, cuDNN Version: 7.6.
+W1025 14:10:22.474349 31685 device_context.cc:372] device: 6, cuDNN Version: 7.6.
+W1025 14:10:22.478732 31679 device_context.cc:372] device: 0, cuDNN Version: 7.6.
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for conv1.weight. conv1.weight receives a shape [64, 3, 3, 3], but the expected shape is [64, 3, 7, 7].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._mean. bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._variance. bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.conv1.weight. layer1.0.conv1.weight receives a shape [64, 128, 3, 3], but the expected shape is [64, 64, 3, 3].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._mean. layer1.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._variance. layer1.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._mean. layer1.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._variance. layer1.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._mean. layer1.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._variance. layer1.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._mean. layer1.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._variance. layer1.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._mean. layer2.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._variance. layer2.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._mean. layer2.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._variance. layer2.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._mean. layer2.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._variance. layer2.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._mean. layer2.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._variance. layer2.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._mean. layer2.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._variance. layer2.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._mean. layer3.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._variance. layer3.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._mean. layer3.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._variance. layer3.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._mean. layer3.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for conv1.weight. conv1.weight receives a shape [64, 3, 3, 3], but the expected shape is [64, 3, 7, 7].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._mean. bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._variance. bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.conv1.weight. layer1.0.conv1.weight receives a shape [64, 128, 3, 3], but the expected shape is [64, 64, 3, 3].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._mean. layer1.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._variance. layer1.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._mean. layer1.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._variance. layer1.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._mean. layer1.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._variance. layer1.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._mean. layer1.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._variance. layer1.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._mean. layer2.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._variance. layer2.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._mean. layer2.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._variance. layer2.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._mean. layer2.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._variance. layer2.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._mean. layer2.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._variance. layer2.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._mean. layer2.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._variance. layer2.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._mean. layer3.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._variance. layer3.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._mean. layer3.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._variance. layer3.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._mean. layer3.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for conv1.weight. conv1.weight receives a shape [64, 3, 3, 3], but the expected shape is [64, 3, 7, 7].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._mean. bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._variance. bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.conv1.weight. layer1.0.conv1.weight receives a shape [64, 128, 3, 3], but the expected shape is [64, 64, 3, 3].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._mean. layer1.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._variance. layer1.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._mean. layer1.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._variance. layer1.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._mean. layer1.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._variance. layer1.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._mean. layer1.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._variance. layer1.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._mean. layer2.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._variance. layer2.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._mean. layer2.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._variance. layer2.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._mean. layer2.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._variance. layer2.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._mean. layer2.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._variance. layer2.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._mean. layer2.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._variance. layer2.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._mean. layer3.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._variance. layer3.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._mean. layer3.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._variance. layer3.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._mean. layer3.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for conv1.weight. conv1.weight receives a shape [64, 3, 3, 3], but the expected shape is [64, 3, 7, 7].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._mean. bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._variance. bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.conv1.weight. layer1.0.conv1.weight receives a shape [64, 128, 3, 3], but the expected shape is [64, 64, 3, 3].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._mean. layer1.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._variance. layer1.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._mean. layer1.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._variance. layer1.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._mean. layer1.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._variance. layer1.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._mean. layer1.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._variance. layer1.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._mean. layer2.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._variance. layer2.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._mean. layer2.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._variance. layer2.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._mean. layer2.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._variance. layer2.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._mean. layer2.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._variance. layer2.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._mean. layer2.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._variance. layer2.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._mean. layer3.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._variance. layer3.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._mean. layer3.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._variance. layer3.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._mean. layer3.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for conv1.weight. conv1.weight receives a shape [64, 3, 3, 3], but the expected shape is [64, 3, 7, 7].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._mean. bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._variance. bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.conv1.weight. layer1.0.conv1.weight receives a shape [64, 128, 3, 3], but the expected shape is [64, 64, 3, 3].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._mean. layer1.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._variance. layer1.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._mean. layer1.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._variance. layer1.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._mean. layer1.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._variance. layer1.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._mean. layer1.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._variance. layer1.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._mean. layer2.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._variance. layer2.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._mean. layer2.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._variance. layer2.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._mean. layer2.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._variance. layer2.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._mean. layer2.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._variance. layer2.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._mean. layer2.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._variance. layer2.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._mean. layer3.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._variance. layer3.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._mean. layer3.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._variance. layer3.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._mean. layer3.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for conv1.weight. conv1.weight receives a shape [64, 3, 3, 3], but the expected shape is [64, 3, 7, 7].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._mean. bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._variance. bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.conv1.weight. layer1.0.conv1.weight receives a shape [64, 128, 3, 3], but the expected shape is [64, 64, 3, 3].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._mean. layer1.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._variance. layer1.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._mean. layer1.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._variance. layer1.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._mean. layer1.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._variance. layer1.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._mean. layer1.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._variance. layer1.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._mean. layer2.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._variance. layer2.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._mean. layer2.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._variance. layer2.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._mean. layer2.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._variance. layer2.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._mean. layer2.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._variance. layer2.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._mean. layer2.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._variance. layer2.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._mean. layer3.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._variance. layer3.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._mean. layer3.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._variance. layer3.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._mean. layer3.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for conv1.weight. conv1.weight receives a shape [64, 3, 3, 3], but the expected shape is [64, 3, 7, 7].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._mean. bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for bn1._variance. bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.conv1.weight. layer1.0.conv1.weight receives a shape [64, 128, 3, 3], but the expected shape is [64, 64, 3, 3].
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._mean. layer1.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn1._variance. layer1.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._mean. layer1.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.0.bn2._variance. layer1.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._mean. layer1.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn1._variance. layer1.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._mean. layer1.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer1.1.bn2._variance. layer1.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._mean. layer2.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn1._variance. layer2.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._mean. layer2.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.bn2._variance. layer2.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._mean. layer2.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.0.downsample.1._variance. layer2.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._mean. layer2.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn1._variance. layer2.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._mean. layer2.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer2.1.bn2._variance. layer2.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._mean. layer3.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn1._variance. layer3.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._mean. layer3.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.bn2._variance. layer3.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._mean. layer3.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.0.downsample.1._variance. layer3.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._mean. layer3.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn1._variance. layer3.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._mean. layer3.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer3.1.bn2._variance. layer3.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._mean. layer4.0.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn1._variance. layer4.0.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._mean. layer4.0.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.bn2._variance. layer4.0.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._mean. layer4.0.downsample.1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.0.downsample.1._variance. layer4.0.downsample.1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._mean. layer4.1.bn1._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn1._variance. layer4.1.bn1._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._mean. layer4.1.bn2._mean is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for layer4.1.bn2._variance. layer4.1.bn2._variance is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.weight. fc.weight is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/layers.py:1303: UserWarning: Skip loading for fc.bias. fc.bias is not found in the provided dict.
+  warnings.warn(("Skip loading for {}. ".format(key) + str(err)))
+/data6/zhengtianlun/PANet_paddle-main/dataset/pan/pan_ctw.py:42: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  x1 = np.int(gt[0])
+/data6/zhengtianlun/PANet_paddle-main/dataset/pan/pan_ctw.py:43: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  y1 = np.int(gt[1])
+/data6/zhengtianlun/PANet_paddle-main/dataset/pan/pan_ctw.py:45: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  bbox = [np.int(gt[i]) for i in range(4, 32)]
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/tensor/creation.py:143: DeprecationWarning: `np.object` is a deprecated alias for the builtin `object`. To silence this warning, use `object` by itself. Doing this will not modify any behavior and is safe. 
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  if data.dtype == np.object:
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dataloader/dataloader_iter.py:89: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  if isinstance(slot[0], (np.ndarray, np.bool, numbers.Number)):
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/nn/layer/norm.py:648: UserWarning: When training, we now always track global mean and variance.
+  "When training, we now always track global mean and variance.")
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/dygraph/math_op_patch.py:238: UserWarning: The dtype of left and right variables are not the same, left dtype is VarType.FP32, but right dtype is VarType.BOOL, the right dtype will convert to VarType.FP32
+  format(lhs_dtype, rhs_dtype, lhs_dtype))
+2021-10-25 14:15:29,293 - WARNING - DataLoader reader thread raised an exception.
+terminate called without an active exception
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::BasicEngine::Execute()
+1   paddle::imperative::GradientAccumulator::CallBackwardPostHooks()
+2   paddle::imperative::Reducer::AddDistHook(unsigned long)
+3   paddle::imperative::Reducer::MarkVarReady(unsigned long, bool)
+4   paddle::imperative::Reducer::MarkGroupReady(unsigned long)
+5   paddle::imperative::Group::SplitTensors(paddle::platform::CUDADeviceContext const&)
+6   void paddle::imperative::SplitTensorsForAllReduce<float>(paddle::platform::CUDADeviceContext const&, paddle::framework::Variable*, std::vector<paddle::framework::Tensor, std::allocator<paddle::framework::Tensor> >*)
+7   paddle::operators::math::SplitFunctor<paddle::platform::CUDADeviceContext, float>::operator()(paddle::platform::CUDADeviceContext const&, paddle::framework::Tensor const&, std::vector<paddle::framework::Tensor const*, std::allocator<paddle::framework::Tensor const*> > const&, int, std::vector<paddle::framework::Tensor*, std::allocator<paddle::framework::Tensor*> >*)
+8   paddle::memory::allocation::CUDADeviceContextAllocation::~CUDADeviceContextAllocation()
+9   paddle::memory::allocation::CUDADeviceContextAllocation::~CUDADeviceContextAllocation()
+10  paddle::framework::SignalHandle(char const*, int)
+11  paddle::platform::GetCurrentTraceBackString[abi:cxx11]()
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Process abort signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1635142529 (unix time) try "date -d @1635142529" if you are using GNU date ***]
+  [SignalInfo: *** SIGABRT (@0x40c00007bc3) received by PID 31683 (TID 0x7f1a1437a700) from PID 31683 ***]
+
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::pybind::MultiDeviceFeedReader<paddle::operators::reader::LoDTensorBlockingQueue>::CheckNextStatus()
+1   paddle::pybind::MultiDeviceFeedReader<paddle::operators::reader::LoDTensorBlockingQueue>::WaitFutures(std::__exception_ptr::exception_ptr*)
+2   paddle::framework::SignalHandle(char const*, int)
+3   paddle::platform::GetCurrentTraceBackString[abi:cxx11]()
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1635142538 (unix time) try "date -d @1635142538" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x40c00007b3e) received by PID 31679 (TID 0x7f5029ee9700) from PID 31550 ***]
+
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::framework::SignalHandle(char const*, int)
+1   paddle::platform::GetCurrentTraceBackString[abi:cxx11]()
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1635142553 (unix time) try "date -d @1635142553" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x40c00007b3e) received by PID 31681 (TID 0x7fea4dac2700) from PID 31550 ***]
+
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::framework::SignalHandle(char const*, int)
+1   paddle::platform::GetCurrentTraceBackString[abi:cxx11]()
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1635142569 (unix time) try "date -d @1635142569" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x40c00007b3e) received by PID 31684 (TID 0x7fe385ed1700) from PID 31550 ***]
+
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::framework::SignalHandle(char const*, int)
+1   paddle::platform::GetCurrentTraceBackString[abi:cxx11]()
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1635142583 (unix time) try "date -d @1635142583" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x40c00007b3e) received by PID 31685 (TID 0x7f46fed1d700) from PID 31550 ***]
+
+Traceback (most recent call last):
+  File "dist_train.py", line 241, in <module>
+    dist.spawn(main, args=(args,), nprocs=args.nprocs)
+  File "/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/distributed/spawn.py", line 449, in spawn
+    while not context.join():
+  File "/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/distributed/spawn.py", line 255, in join
+    self._throw_exception(error_index)
+  File "/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/distributed/spawn.py", line 263, in _throw_exception
+    (error_index, name))
+Exception: Process 4 terminated with signal SIGABRT.
+/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+Traceback (most recent call last):
+  File "dist_train.py", line 241, in <module>
+    dist.spawn(main, args=(args,), nprocs=args.nprocs)
+  File "/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/distributed/spawn.py", line 417, in spawn
+    procs_env_list = _get_subprocess_env_list(nprocs, options)
+  File "/data6/zhengtianlun/miniconda3/envs/ppocr/lib/python3.7/site-packages/paddle/distributed/spawn.py", line 137, in _get_subprocess_env_list
+    (len(env_devices_list), nprocs))
+RuntimeError: the number of visible devices(4) is less than the number of spawn processes(7), please ensure that the correct `nprocs` argument is passed or the environment variable `CUDA_VISIBLE_DEVICES` is correctly configured.

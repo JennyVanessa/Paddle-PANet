@@ -57,20 +57,21 @@ class PA_Head(nn.Layer):
     def get_results(self, out, img_meta, cfg):
         outputs = dict()
 
-        if not self.training and cfg.report_speed:
-            paddle.cuda.synchronize()
-            start = time.time()
+        # if not self.training and cfg.report_speed:
+        #     paddle.cuda.synchronize()
+        #     start = time.time()
 
         score = F.sigmoid(out[:, 0, :, :]).numpy()
         kernels = (out[:, :2, :, :].numpy() > 0).astype(np.uint8)
         text_mask = kernels[:, :1, :, :]
         kernels[:, 1:, :, :] = kernels[:, 1:, :, :] * text_mask
         emb = out[:, 2:, :, :]
-        emb = emb * text_mask.float()
+        emb = emb * paddle.to_tensor(text_mask, dtype="float32")
+        
 
-        score = score.data.cpu().numpy()[0].astype(np.float32)
-        kernels = kernels.data.cpu().numpy()[0].astype(np.uint8)
-        emb = emb.cpu().numpy()[0].astype(np.float32)
+        score = score[0].astype(np.float32)
+        kernels = kernels[0].astype(np.uint8)
+        emb = emb.numpy()[0].astype(np.float32)
 
         # pa
         label = pa(kernels, emb)
@@ -85,9 +86,9 @@ class PA_Head(nn.Layer):
         score = cv2.resize(score, (img_size[1], img_size[0]),
                            interpolation=cv2.INTER_NEAREST)
 
-        if not self.training and cfg.report_speed:
-            paddle.cuda.synchronize()
-            outputs.update(dict(det_post_time=time.time() - start))
+        # if not self.training and cfg.report_speed:
+        #     paddle.cuda.synchronize()
+        #     outputs.update(dict(det_post_time=time.time() - start))
 
         scale = (float(org_img_size[1]) / float(img_size[1]),
                  float(org_img_size[0]) / float(img_size[0]))
