@@ -77,10 +77,11 @@ class PA_Head(nn.Layer):
         label = pa(kernels, emb)
 
         # image size
-        org_img_size = img_meta['org_img_size'][0]
-        img_size = img_meta['img_size'][0]
+        org_img_size = img_meta['org_img_size']
+        img_size = img_meta['img_size']
 
         label_num = np.max(label) + 1
+
         label = cv2.resize(label, (img_size[1], img_size[0]),
                            interpolation=cv2.INTER_NEAREST)
         score = cv2.resize(score, (img_size[1], img_size[0]),

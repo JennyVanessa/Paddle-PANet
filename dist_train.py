@@ -46,14 +46,14 @@ def train(train_loader, model, optimizer, epoch, start_iter, cfg, args):
 
         adjust_learning_rate(optimizer, train_loader, epoch, iter, cfg)
 
-        img=paddle.to_tensor(img)
-        gt_text=paddle.to_tensor(gt_text)
-        gt_kernels=paddle.to_tensor(gt_kernels)
-        training_mask=paddle.to_tensor(training_mask)
-        gt_instance=paddle.to_tensor(gt_instance)
-        gt_bboxes=paddle.to_tensor(gt_bboxes)
+        # img=paddle.to_tensor(img)
+        # gt_text=paddle.to_tensor(gt_text)
+        # gt_kernels=paddle.to_tensor(gt_kernels)
+        # training_mask=paddle.to_tensor(training_mask)
+        # gt_instance=paddle.to_tensor(gt_instance)
+        # gt_bboxes=paddle.to_tensor(gt_bboxes)
 
-        paddle.set_device("gpu")
+        # paddle.set_device("gpu")
         # prepare input
         data = dict(
             imgs=img,
@@ -178,7 +178,7 @@ def main(args):
         shuffle=True,
         drop_last=True,
         num_workers=0,
-        use_shared_memory=False
+        use_shared_memory=True
     )
     from models import build_model
     model = build_model(cfg.model)
