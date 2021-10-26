@@ -227,7 +227,7 @@ class faker_data(Dataset):
 
 class PAN_CTW(Dataset):
     def __init__(self,
-                 split='test',
+                 split='train',
                  is_transform=False,
                  img_size=None,
                  short_size=640,

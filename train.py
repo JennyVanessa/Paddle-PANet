@@ -5,7 +5,7 @@ import argparse
 from mmcv import Config
 import os
 import time
-from reprod_log import ReprodLogger
+#from reprod_log import ReprodLogger
 from reprod_log import ReprodDiffHelper
 from collections import OrderedDict
 from dataset import build_data_loader
@@ -13,8 +13,8 @@ from models import build_model
 from utils import AverageMeter
 import numpy as np
 
-paddle.seed(10240)
-np.random.seed(10240)
+# paddle.seed(10240)
+# # np.random.seed(10240)
 
 
 def faker_data():
@@ -124,8 +124,8 @@ def train(train_loader, model, optimizer, epoch, start_iter, cfg):
 
     #for iter, data_ in enumerate(train_loader):
     for iter, (img,gt_text,gt_kernels,training_mask,gt_instance,gt_bboxes) in enumerate(train_loader):
-        if iter == 2:
-            break
+        # if iter == 2:
+        #     break
         # skip previous iterations
 
         img=paddle.to_tensor(img)
@@ -135,9 +135,9 @@ def train(train_loader, model, optimizer, epoch, start_iter, cfg):
         # gt_instance=paddle.to_tensor(gt_instance)
         # gt_bboxes=paddle.to_tensor(gt_bboxes)
 
-        print(img.shape)
-        print(gt_text.shape)
-        print(gt_kernels.shape)
+        # print(img.shape)
+        # print(gt_text.shape)
+        # print(gt_kernels.shape)
 
         if iter < start_iter:
             print('Skipping iter: %d' % iter)
@@ -188,11 +188,11 @@ def train(train_loader, model, optimizer, epoch, start_iter, cfg):
         optimizer.step()
 
         batch_time.update(time.time() - start)
-
-        print(loss_list)
-        reprod_logger2 = ReprodLogger()
-        reprod_logger2.add("loss_list", np.array(loss_list))
-        reprod_logger2.save("npy_t_p/bp_align_paddle.npy")
+        #
+        # print(loss_list)
+        # reprod_logger2 = ReprodLogger()
+        # reprod_logger2.add("loss_list", np.array(loss_list))
+        # reprod_logger2.save("npy_t_p/bp_align_paddle.npy")
         # update start time
         start = time.time()
 

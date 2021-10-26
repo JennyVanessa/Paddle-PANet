@@ -104,10 +104,11 @@ def train(train_loader, model, optimizer, epoch, start_iter, cfg, args):
 
         # print log
         if iter % 20 == 0 and dist.get_rank() == 0:
-            output_log = '({batch}/{size}) LR: {lr:.6f} | Batch: {bt:.3f}s | Total: {total:.0f}min | ' \
+            output_log = 'Time:{time} | ({batch}/{size}) LR: {lr:.6f} | Batch: {bt:.3f}s | Total: {total:.0f}min | ' \
                          'ETA: {eta:.0f}min | Loss: {loss:.3f} | ' \
                          'Loss(text/kernel): {loss_text:.3f}/{loss_kernel:.3f} ' \
                          '| IoU(text/kernel): {iou_text:.3f}/{iou_kernel:.3f} '.format(
+                time= time.time(),
                 batch=iter + 1,
                 size=len(train_loader) // args.nprocs,
                 lr=optimizer.get_lr(),
