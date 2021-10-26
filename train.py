@@ -166,8 +166,8 @@ def main(args):
         batch_size=cfg.data.batch_size,
         shuffle=True,
         drop_last=True,
-        num_workers=0,
-        use_shared_memory=False
+        num_workers=8,
+        use_shared_memory=True
     )
 
     model = build_model(cfg.model)
