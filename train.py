@@ -5,13 +5,12 @@ import argparse
 from mmcv import Config
 import os
 import time
-#from reprod_log import ReprodLogger
-from reprod_log import ReprodDiffHelper
+import numpy as np
 from collections import OrderedDict
 from dataset import build_data_loader
 from models import build_model
 from utils import AverageMeter
-import numpy as np
+
 
 # paddle.seed(10240)
 # # np.random.seed(10240)
@@ -104,6 +103,7 @@ def check_train(train_loader, model, optimizer, epoch, start_iter, cfg):
     reprod_logger2.add("loss_list", loss_list.cpu().detach().numpy())
     reprod_logger2.save("npy_t_p/bp_align_paddle.npy")
 
+
 def train(train_loader, model, optimizer, epoch, start_iter, cfg):
     model.train()
 
@@ -120,24 +120,18 @@ def train(train_loader, model, optimizer, epoch, start_iter, cfg):
 
     # start time
     start = time.time()
-    loss_list = []
 
     #for iter, data_ in enumerate(train_loader):
     for iter, (img,gt_text,gt_kernels,training_mask,gt_instance,gt_bboxes) in enumerate(train_loader):
-        # if iter == 2:
-        #     break
         # skip previous iterations
 
         img=paddle.to_tensor(img)
         gt_text=paddle.to_tensor(gt_text)
         gt_kernels=paddle.to_tensor(gt_kernels)
         training_mask=paddle.to_tensor(training_mask)
-        # gt_instance=paddle.to_tensor(gt_instance)
-        # gt_bboxes=paddle.to_tensor(gt_bboxes)
+        gt_instance=paddle.to_tensor(gt_instance)
+        gt_bboxes=paddle.to_tensor(gt_bboxes)
 
-        # print(img.shape)
-        # print(gt_text.shape)
-        # print(gt_kernels.shape)
 
         if iter < start_iter:
             print('Skipping iter: %d' % iter)
@@ -150,14 +144,20 @@ def train(train_loader, model, optimizer, epoch, start_iter, cfg):
         adjust_learning_rate(optimizer, train_loader, epoch, iter, cfg)
 
         # prepare input
+        # data = dict(
+        #     imgs=img,
+        #     gt_texts=gt_text,
+        #     gt_kernels=gt_kernels,
+        #     training_masks=training_mask,
+        # )
+
         data = dict(
             imgs=img,
             gt_texts=gt_text,
             gt_kernels=gt_kernels,
             training_masks=training_mask,
             gt_instances = gt_instance,
-            gt_bboxes = gt_bboxes,
-
+            gt_bboxes = gt_bboxes
         )
         data.update(dict(cfg=cfg))
 
@@ -180,7 +180,6 @@ def train(train_loader, model, optimizer, epoch, start_iter, cfg):
         iou_kernel = paddle.mean(outputs['iou_kernel'])
         ious_kernel.update(float(iou_kernel))
 
-        loss_list.append(loss.numpy())
         losses.update(float(loss))
         # backward
         optimizer.clear_grad()
@@ -193,6 +192,7 @@ def train(train_loader, model, optimizer, epoch, start_iter, cfg):
         # reprod_logger2 = ReprodLogger()
         # reprod_logger2.add("loss_list", np.array(loss_list))
         # reprod_logger2.save("npy_t_p/bp_align_paddle.npy")
+
         # update start time
         start = time.time()
 
@@ -262,10 +262,10 @@ def main(args):
     train_loader = paddle.io.DataLoader(
         data_set,
         batch_size=cfg.data.batch_size,
-        shuffle=False,
+        shuffle=True,
         drop_last=True,
-        num_workers=0,
-        use_shared_memory=False
+        num_workers=8,
+        use_shared_memory=True
     )
 
     model = build_model(cfg.model)
@@ -303,7 +303,7 @@ def main(args):
             state_dict=model.state_dict(),
             optimizer=optimizer.state_dict()
         )
-        # save_checkpoint(state, checkpoint_path, cfg)
+        save_checkpoint(state, checkpoint_path, cfg)
 
 
 if __name__ == '__main__':
