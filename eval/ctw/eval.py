@@ -4,7 +4,7 @@ import numpy as np
 
 project_root = '../../'
 
-pred_root = project_root + 'outputs/submit_ctw'
+pred_root = project_root + 'outputs/submit_ctw/results/'
 gt_root = project_root + 'data/ctw1500/test/text_label_circum/'
 
 
@@ -60,8 +60,8 @@ if __name__ == '__main__':
     pred_list = file_util.read_dir(pred_root)
 
     tp, fp, npos = 0, 0, 0
-
     for pred_path in pred_list:
+
         preds = get_pred(pred_path)
         gt_path = gt_root + pred_path.split('/')[-1]
         gts = get_gt(gt_path)
@@ -70,14 +70,14 @@ if __name__ == '__main__':
         cover = set()
         for pred_id, pred in enumerate(preds):
             pred = np.array(pred)
-            pred = pred.reshape(pred.shape[0] / 2, 2)[:, ::-1]
+            pred = pred.reshape(pred.shape[0] // 2, 2)[:, ::-1]
 
             pred_p = plg.Polygon(pred)
 
             flag = False
             for gt_id, gt in enumerate(gts):
                 gt = np.array(gt)
-                gt = gt.reshape(gt.shape[0] / 2, 2)
+                gt = gt.reshape(gt.shape[0] // 2, 2)
                 gt_p = plg.Polygon(gt)
 
                 union = get_union(pred_p, gt_p)
@@ -97,4 +97,8 @@ if __name__ == '__main__':
     recall = tp / npos
     hmean = 0 if (precision + recall) == 0 else 2.0 * precision * recall / (precision + recall)
 
-    print('p: %.4f, r: %.4f, f: %.4f' % (precision, recall, hmean))
+    res = 'p: %.4f, r: %.4f, f: %.4f' % (precision, recall, hmean)
+    file_handle=open('../../res.txt',mode='a+')
+    file_handle.write(res+"\n")
+    file_handle.close()
+    print(res)
