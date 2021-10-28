@@ -39,16 +39,20 @@ pip install -r requirement.txt
 ### Pretrain Backbone 
 
 > download resent18 pre-train model in `pretrain/resnet18.pdparams`
+
 > [pretrain_resnet18](https://pan.baidu.com/s/1zwmcaAfabZ8fT-KoisbR3w)
 > password: j5g3
 
 ## Training
 ```shell script
 CUDA_VISIBLE_DEVICES=0,1,2,3 python dist_train.py ${CONFIG_FILE}
+
 ```
 For example:
 ```shell script
 CUDA_VISIBLE_DEVICES=0,1,2,3 python dist_train.py config/pan/pan_r18_ctw.py
+#checkpoint continue
+python3.7 dist_train.py config/pan/pan_r18_ctw_train.py --nprocs 1 --resume checkpoints/pan_r18_ctw_train
 ```
 
 
