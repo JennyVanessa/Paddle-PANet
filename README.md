@@ -26,11 +26,20 @@ Cython
 ```
 
 ## Install
+
+### Install env
 Install paddle following the official [tutorial](https://www.paddlepaddle.org.cn/documentation/docs/zh/install/index_cn.html).
 ```shell script
 pip install -r requirement.txt
 ./compile.sh
 ```
+
+### Pretrain Backbone 
+
+download resent18 pre-train model in `pretrain/resnet18.pdparams`
+
+> [pretrain_resnet18](https://pan.baidu.com/s/1zwmcaAfabZ8fT-KoisbR3w)
+> 提取码: j5g3
 
 ## Training
 ```shell script
