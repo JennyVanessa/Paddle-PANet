@@ -33,13 +33,14 @@ Install paddle following the official [tutorial](https://www.paddlepaddle.org.cn
 pip install -r requirement.txt
 ./compile.sh
 ```
+## Dataset
+> Please refer to [dataset/README.md](dataset/README.md) for dataset preparation.
 
 ### Pretrain Backbone 
 
-download resent18 pre-train model in `pretrain/resnet18.pdparams`
-
+> download resent18 pre-train model in `pretrain/resnet18.pdparams`
 > [pretrain_resnet18](https://pan.baidu.com/s/1zwmcaAfabZ8fT-KoisbR3w)
-> 提取码: j5g3
+> password: j5g3
 
 ## Training
 ```shell script
@@ -53,21 +54,17 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python dist_train.py config/pan/pan_r18_ctw.py
 
 ## Evaluation
 ## Introduction
-The evaluation scripts of CTW 1500 dataset.
-## [CTW](https://github.com/Yuliang-Liu/Curve-Text-Detector)
+The evaluation scripts of CTW 1500 dataset. [CTW](https://1drv.ms/u/s!Aplwt7jiPGKilH4XzZPoKrO7Aulk)
+
 Text detection
 ```shell script
 ./start_test.sh
 ```
 
 
-## Benchmark 
-
-
 
 ## License
 This project is developed and maintained by [IMAGINE Lab@National Key Laboratory for Novel Software Technology, Nanjing University](https://cs.nju.edu.cn/lutong/ImagineLab.html).
 
-<img src="logo.jpg" alt="IMAGINE Lab">
 
 This project is released under the [Apache 2.0 license](https://github.com/whai362/pan_pp.pytorch/blob/master/LICENSE).
