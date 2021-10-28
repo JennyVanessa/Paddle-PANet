@@ -10,7 +10,10 @@ from collections import OrderedDict
 from dataset import build_data_loader
 from models import build_model
 from utils import AverageMeter
+import warnings
 
+
+warnings.filterwarnings('ignore')
 
 # paddle.seed(10240)
 # # np.random.seed(10240)

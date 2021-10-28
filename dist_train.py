@@ -14,7 +14,7 @@ import argparse
 import warnings
 
 
-# warnings.filterwarnings('ignore')
+warnings.filterwarnings('ignore')
 
 
 def train(train_loader, model, optimizer, epoch, start_iter, cfg, args):
