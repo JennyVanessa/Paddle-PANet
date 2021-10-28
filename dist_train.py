@@ -236,7 +236,7 @@ if __name__ == '__main__':
     parser.add_argument('config', help='config file path')
     parser.add_argument('--checkpoint', nargs='?', type=str, default=None)
     parser.add_argument('--resume', nargs='?', type=str, default=None)
-    parser.add_argument('--nprocs', nargs='?', type=int, default=7)
+    parser.add_argument('--nprocs', nargs='?', type=int, default=4)
 
     args = parser.parse_args()
     dist.spawn(main, args=(args,), nprocs=args.nprocs)

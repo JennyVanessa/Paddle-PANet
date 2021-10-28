@@ -2,7 +2,7 @@ model = dict(
     type='PAN',
     backbone=dict(
         type='resnet18',
-        pretrained=False,
+        pretrained=True,
     ),
     neck=dict(
         type='FPEM_v1',
@@ -30,7 +30,7 @@ model = dict(
     )
 )
 data = dict(
-    batch_size=8,
+    batch_size=16,
     train=dict(
         type='PAN_CTW',
         # type='faker_data',
