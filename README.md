@@ -2,7 +2,7 @@
 
 ## Results_Compared 
 
-[CTW1500](https://github.com/Yuliang-Liu/Curve-Text-Detector)
+[CTW1500](dataset/README.md) 
 
 | Method | Backbone | Fine-tuning  | Config | Precision (%) | Recall (%) | F-measure (%) | Model | Log|
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |:-: |
