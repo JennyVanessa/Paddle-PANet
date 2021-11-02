@@ -24,9 +24,7 @@
 
 
 ## 背景简介
-场景文本检测是场景文本阅读系统的重要一步，随着卷积神经网络的快速发展，场景文字检测也取得了巨大的进步。尽管如此，仍存在两个主要挑战，它们阻碍文字检测部署到现实世界的应用中。第一个问题是速度和准确性之间的平衡。第二个是对任意形状的文本实例进行建模。最近，已经提出了一些方法来处理任意形状的文本检测，但是它们很少去考虑算法的运行时间和效率，这可能在实际应用环境中受到限制。
-
-之前在CVPR 2019上发的PSENet是效果非常好的文本检测算法，但是整个网络的后处理复杂，导致其运行速度很慢。于是PSENet算法的原班作者提出了PAN网络，使其在不损失精度的情况下，极大加快了网络inference的速度，因此也可以把PAN看做是PSENet V2版本。
+这是发在2019ICCV上的一篇一阶段场景文本检测论文。主要是PSENet的升级版。PSENet虽然处理速度很快，准确度很高，但后处理过程繁琐，而且没办法和网络模型融合在一起，实现训练。PANet很好的解决了这一问题，把后处理过程也放入网络中，预测出三个loss，最后进行融合。
 
 ## 网络结构
 <center><img src="https://ai-studio-static-online.cdn.bcebos.com/ce9767d24b054c3ebf51621a8d14ee922e96e5d9a0c64f84be60f4e7f27695eb"， height=70%, width=70%></center>
@@ -53,10 +51,23 @@ FPEM模块可以看成是一个轻量级的FPN，只不过这个FPEM计算量不
 
 ### <font face="Times new roman"> FFM </font>
 Feature Fusion Module(FFM)模块用于融合不同尺度的特征，其结构如下：
+<center><img src="https://user-images.githubusercontent.com/39580716/139779228-783098eb-4d2d-41e6-88b1-731b653bee4e.png"， height=50%, width=50%></center>
+
+最后通过上采样将它们Concatenate到一起。
+
+模型最后预测三种信息：
+1、文字区域
+2、文字kernel
+3、文字kernel的相似向量
+
 
 
 ## Loss
-![image](https://user-images.githubusercontent.com/39580716/139774753-5e47638a-2c66-4a72-aa93-c725a48c91d8.png)
+<center><img src="https://user-images.githubusercontent.com/39580716/139774753-5e47638a-2c66-4a72-aa93-c725a48c91d8.png"， height=50%, width=50%></center>
+其中文字区域和kernel预测loss为：
+<center><img src="https://user-images.githubusercontent.com/39580716/139779151-2ce770af-8309-47c9-b4b8-c273b8107f3d.png"， height=50%, width=50%></center>
+
+
 
 
 # 快速安装
