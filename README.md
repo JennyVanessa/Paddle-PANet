@@ -7,16 +7,8 @@
 - [结果对比](#结果对比)
 - [论文介绍](#论文介绍)
 - [快速安装](#快速安装)
-## Introduction
-```
-@inproceedings{wang2019efficient,
-  title={Efficient and Accurate Arbitrary-Shaped Text Detection with Pixel Aggregation Network},
-  author={Wang, Wenhai and Xie, Enze and Song, Xiaoge and Zang, Yuhang and Wang, Wenjia and Lu, Tong and Yu, Gang and Shen, Chunhua},
-  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
-  pages={8440--8449},
-  year={2019}
-}
-```
+
+
 
 # 结果对比
 
@@ -126,3 +118,13 @@ This project is developed and maintained by [IMAGINE Lab@National Key Laboratory
 
 
 This project is released under the [Apache 2.0 license](https://github.com/whai362/pan_pp.pytorch/blob/master/LICENSE).
+
+```
+@inproceedings{wang2019efficient,
+  title={Efficient and Accurate Arbitrary-Shaped Text Detection with Pixel Aggregation Network},
+  author={Wang, Wenhai and Xie, Enze and Song, Xiaoge and Zang, Yuhang and Wang, Wenjia and Lu, Tong and Yu, Gang and Shen, Chunhua},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+  pages={8440--8449},
+  year={2019}
+}
+```
