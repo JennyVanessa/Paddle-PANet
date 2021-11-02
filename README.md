@@ -64,6 +64,7 @@ Feature Fusion Module(FFM)模块用于融合不同尺度的特征，其结构如
 
 
 ## Loss
+![image](https://user-images.githubusercontent.com/39580716/139774753-5e47638a-2c66-4a72-aa93-c725a48c91d8.png)
 
 
 # 快速安装
@@ -80,7 +81,6 @@ opencv-python 3.4.2.17
 Cython
 ```
 
-## Install
 
 ### Install env
 Install paddle following the official [tutorial](https://www.paddlepaddle.org.cn/documentation/docs/zh/install/index_cn.html).
@@ -111,7 +111,7 @@ python3.7 dist_train.py config/pan/pan_r18_ctw_train.py --nprocs 1 --resume chec
 ```
 
 
-## Introduction
+## Evaluation 
 The evaluation scripts of CTW 1500 dataset. [CTW](https://1drv.ms/u/s!Aplwt7jiPGKilH4XzZPoKrO7Aulk)
 
 Text detection
