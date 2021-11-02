@@ -1,4 +1,16 @@
+
+# Efficient and Accurate Arbitrary-Shaped Text Detection with Pixel Aggregation Network
 # Paddle-PANet
+## Introduction
+```
+@inproceedings{wang2019efficient,
+  title={Efficient and Accurate Arbitrary-Shaped Text Detection with Pixel Aggregation Network},
+  author={Wang, Wenhai and Xie, Enze and Song, Xiaoge and Zang, Yuhang and Wang, Wenjia and Lu, Tong and Yu, Gang and Shen, Chunhua},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+  pages={8440--8449},
+  year={2019}
+}
+```
 
 ## Results_Compared 
 
@@ -6,9 +18,9 @@
 
 | Method | Backbone | Fine-tuning  | Config | Precision (%) | Recall (%) | F-measure (%) | Model | Log|
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |:-: |
-| PaddlePaddle_PANet | ResNet18 | N  | [panet_r18_ctw.py](https://github.com/JennyVanessa/Paddle-PANet/blob/main/config/pan/pan_r18_ctw.py) | 84.51 | 78.62 | 81.46 | [Model](https://github.com/JennyVanessa/Paddle-PANet/tree/main/checkpoints/pan_r18_ctw_train) |  [Log](https://github.com/JennyVanessa/Paddle-PANet/blob/main/trainlog.txt)
 | mmocr_PANet | Resnet18 | N | [ctw_config](https://github.com/open-mmlab/mmocr/blob/main/configs/textdet/panet/README.md) |  77.6 | 83.8 | 80.6 | -- | -- |
-
+| PAN (paper) | ResNet18 | N | [config](https://github.com/whai362/pan_pp.pytorch/blob/master/config/pan/pan_r18_ctw.py)| 84.6 | 77.7 | 81.0 | - | - |
+| PaddlePaddle_PANet | ResNet18 | N  | [panet_r18_ctw.py](https://github.com/JennyVanessa/Paddle-PANet/blob/main/config/pan/pan_r18_ctw.py) | 84.51 | 78.62 | **81.46** | [Model](https://github.com/JennyVanessa/Paddle-PANet/tree/main/checkpoints/pan_r18_ctw_train) |  [Log](https://github.com/JennyVanessa/Paddle-PANet/blob/main/trainlog.txt)
 
 # 论文介绍
 
