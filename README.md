@@ -1,6 +1,12 @@
 
 # Efficient and Accurate Arbitrary-Shaped Text Detection with Pixel Aggregation Network
 # Paddle-PANet
+
+
+# 目录
+- [结果对比](#结果对比)
+- [论文介绍](#论文介绍)
+- [快速安装](#快速安装)
 ## Introduction
 ```
 @inproceedings{wang2019efficient,
@@ -12,7 +18,7 @@
 }
 ```
 
-## Results_Compared 
+# 结果对比
 
 [CTW1500](dataset/README.md) 
 
@@ -52,35 +58,15 @@ Feature Pyramid Enhancement Module(FPEM)，即特征金字塔增强模块。FPEM
 FPEM是一个U形模组，由两个阶段组成，up-scale增强、down-scale增强。up-scale增强作用于输入的特征金字塔，它以步长32,16,8,4像素在特征图上迭代增强。在down-scale阶段，输入的是由up-scale增强生成的特征金字塔，增强的步长从4到32，同时，down-scale增强输出的的特征金字塔就是最终FPEM的输出。
 FPEM模块可以看成是一个轻量级的FPN，只不过这个FPEM计算量不大，可以不停级联以达到不停增强特征的作用。
 
-### <font face="Times new roman"> FPEM </font>
-如上图所示，RCNNHead 主要接收三个输入 fpn features, proposal boxes, proposal features，其中后面两个输入使用上述 initial 方式作为初始值，之后使用预测的 boxes 和 features 作为下一个 RCNNHead 的输入。所以这里是一个不断迭代不断修正的过程。首先使用 fpn features 和 proposal boxes 经过 roi-align 得到 roi features，然后和 proposal features 进行 instance interactive（这里比较容易理解这个名字，因为 roi features 和 proposal features 都是 num_proposals 个 proposal 的 feature。输出为 pred_class, pred_boxes, proposal_features 后两者会被送入下一个 RCNNHead。（值得注意的是 boxes 是脱离了计算图后被送入的）
 
 ### <font face="Times new roman"> FFM </font>
 Feature Fusion Module(FFM)模块用于融合不同尺度的特征，其结构如下：
 
 
-
-
-
-
-
-
 ## Loss
-Sparse R-CNN 实际上沿用的 DETR 的 loss 和正样本匹配方式即：使用 Hungarian 算法。
-$$
-\mathcal{L} = \lambda_{cls} \cdot \mathcal{L}_{cls} + \lambda_{L1} \cdot \mathcal{L}_{L1} + \lambda_{giou} \cdot \mathcal{L}_{giou}
-$$
-其中 $\lambda$ 是权重因子，上式的权重因子分别为：2.0，5.0，2.0。我觉得这样设置的原因在于 boxes 的 l1 loss 是归一化后进行计算的，如果按照百分之一的误差，那么 boxes 会降到 0.04（因为有 4 个参数的 l1 loss）。此时分类 loss 和 giou loss 肯定在 0.1 及其以上，这样的话 boxes l1 占比很小，不会作为主要优化的一项，也就不可能降到 0.1 了，便到不到百分之一的误差了。论文的 l1 loss 是计算的左上角和右下角 xyxy 与真值的绝对值之和，而 DETR 则是使用的中心点坐标加上宽高。另外论文使用了 focal loss 作为分类损失函数，DETR 使用的多类别交叉熵。
 
-## Experiments
-### 训练方面
-优化器选择了 AdamW 使用了 0.0001 的权重衰减，batch-size 为 16，8 块 GPU，学习率为 0.000025， 并在 epoch 为 27 或者 33 时进行十倍的减少。预训练权重是在 ImageNet 上训练的，其余的层都使用 Xavier 进行初始化。采用了多尺度训练和预测。
-### 推理方面
-唯一的后处理是将无效的 boxes 进行移除，然后将 boxes 调整为适合原图大小的尺寸（因为图片进行了 resize）。eval 的时候直接全部送入 coco 里面，根据作者介绍 coco 的计算方式会匹配分数最高的 boxes ，其余的不会产生影响。在测试阶段，设定一个分数（因为只有有物体的框分数才比较高）这里 DETR 设置的 0.7。
-<center><img src="https://img2020.cnblogs.com/blog/2215171/202106/2215171-20210603161406860-1573706032.png"， height=50%, width=50%></center>
 
-可以看到其只用了 36 epoch 达到了比 DETR 500 epoch 还好的效果。（更详细介绍请见文末链接）
-
+# 快速安装
 ## Recommended environment
 ```
 Python 3.6+
@@ -125,7 +111,6 @@ python3.7 dist_train.py config/pan/pan_r18_ctw_train.py --nprocs 1 --resume chec
 ```
 
 
-## Evaluation
 ## Introduction
 The evaluation scripts of CTW 1500 dataset. [CTW](https://1drv.ms/u/s!Aplwt7jiPGKilH4XzZPoKrO7Aulk)
 
