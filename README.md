@@ -7,7 +7,7 @@
 | Method | Backbone | Fine-tuning  | Config | Precision (%) | Recall (%) | F-measure (%) | Model | Log|
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |:-: |
 | PaddlePaddle_PANet | ResNet18 | N  | [panet_r18_ctw.py](https://github.com/JennyVanessa/Paddle-PANet/blob/main/config/pan/pan_r18_ctw.py) | 84.51 | 78.62 | 81.46 | [Model](https://github.com/JennyVanessa/Paddle-PANet/tree/main/checkpoints/pan_r18_ctw_train) |  [Log](https://github.com/JennyVanessa/Paddle-PANet/blob/main/trainlog.txt)
-| mmocr_PANet | Resnet18 | N | -- |  77.6 | 83.8 | 80.6 | -- | -- |
+| mmocr_PANet | Resnet18 | N | [ctw_config](https://github.com/open-mmlab/mmocr/blob/main/configs/textdet/panet/README.md) |  77.6 | 83.8 | 80.6 | -- | -- |
 
 
 # 论文介绍
